@@ -1,0 +1,19 @@
+
+public class Overloading {
+	
+	public static void main(String[] arg) {
+		Circle cir1 = new Circle(2.0);
+		Circle cir2 = new Circle(3.0);
+		Rectangle rect1 = new Rectangle(1.3, 10);
+		Rectangle rect2 = new Rectangle(2.1, 3.1);
+		
+		System.out.println(cir1.toString() + "Area = " + cir.Area());
+		System.out.println(cir2.toString() + "Area = " + cir.Area());
+		System.out.println(rect1.toString() + "Area = " + rect.Area());
+		System.out.println(rect2.toString() + "Area = " + rect.Area());
+		
+	}
+	
+	
+
+}

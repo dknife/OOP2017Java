@@ -1,0 +1,24 @@
+
+public class Overloading {
+	
+	public static void main(String[] arg) {
+		Circle cir1 = new Circle(2.0);
+		Circle cir2 = new Circle(3.0);
+		Rectangle rect1 = new Rectangle(1.3, 10);
+		Rectangle rect2 = new Rectangle(2.1, 3.1);
+		
+		System.out.println(cir1.toString() + " cir1 Area = " + cir1.Area());
+		System.out.println(cir2.toString() + " cir2 Area = " + cir2.Area());
+		System.out.println(rect1.toString() + " rect1 Area = " + rect1.Area());
+		System.out.println(rect2.toString() + " rect2 Area = " + rect2.Area());
+		
+		// AreaSum (obj1, obj2)
+		
+		System.out.println("cir1 + cir2 = " + Overloading.AreaSum(cir1,cir2));
+	}
+	
+	static double AreaSum(Circle a, Circle b) {
+		return a.Area() + b.Area();
+	}
+
+}

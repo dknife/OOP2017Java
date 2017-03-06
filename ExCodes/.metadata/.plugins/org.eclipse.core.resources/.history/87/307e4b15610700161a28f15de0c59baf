@@ -1,0 +1,13 @@
+
+public class Overloading {
+	
+	public static void main(String[] arg) {
+		Circle cir = new Circle(2.0);
+		Rectangle rect = new Rectangle(1.3, 10);
+		
+		System.out.println(cir.toString() + "Area = " + cir.Area());
+		System.out.println(rect.toString() + "Area = " + rect.Area());
+		
+	}
+
+}
