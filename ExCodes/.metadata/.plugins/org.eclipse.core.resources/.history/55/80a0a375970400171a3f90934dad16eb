@@ -130,12 +130,7 @@ public class Ex2017_02_TicTacToe {
 				int[][] value = new int[3][3];
 				for(row=0;row<3;row++) {
 					for(col=0;col<3;col++) {
-						if(myArray[row][col]!=0) 
-							value[row][col] = 0;
-						else {
-							// value computation
-							// ??????
-						}
+						value[row][col] = myArray[row][col]!=0?-1:0;
 					}
 				}
 				
