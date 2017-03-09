@@ -104,6 +104,7 @@ public class Ex2017_02_TicTacToe {
 			
 			boolean done=false;
 			// 남이 이기지 못 하게 하는 수
+			
 			for(row=0;row<3 && !done;row++) {
 				for(col=0;col<3 && !done;col++) {
 					if(inputOK(row,col,myArray)) {

@@ -112,7 +112,6 @@ public class Ex2017_02_TicTacToe {
 							myArray[row][col] = 1;
 							done = true;
 						}
-						else myArray[row][col] = 0;
 					}
 				}
 			}

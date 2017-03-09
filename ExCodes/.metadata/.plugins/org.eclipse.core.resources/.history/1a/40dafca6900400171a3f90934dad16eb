@@ -101,28 +101,24 @@ public class Ex2017_02_TicTacToe {
 					}
 				}
 			}
-			
-			boolean done=false;
 			// 남이 이기지 못 하게 하는 수
-			for(row=0;row<3 && !done;row++) {
-				for(col=0;col<3 && !done;col++) {
+			for(row=0;row<3;row++) {
+				for(col=0;col<3;col++) {
 					if(inputOK(row,col,myArray)) {
 						myArray[row][col] = -1;
 						if( whoWon(myArray) == -1) {
 							myArray[row][col] = 1;
-							done = true;
+							col=3; row=3;
 						}
-						else myArray[row][col] = 0;
 					}
 				}
 			}
 			
 			// 처음 만나는 빈 곳에 두기
-			for(row=0;row<3 && !done;row++) {
-				for(col=0;col<3 & !done;col++) {
+			for(row=0;row<3;row++) {
+				for(col=0;col<3;col++) {
 					if(inputOK(row,col,myArray)) {
-						myArray[row][col] = 1;	
-						done = true;
+						myArray[row][col] = 1;						
 					}
 				}
 			}

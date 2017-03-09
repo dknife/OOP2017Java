@@ -88,44 +88,13 @@ public class Ex2017_02_TicTacToe {
 			printArray(myArray);
 			
 			// computer
-			// 이기는 수를 찾아 두기 
-			for(row=0;row<3;row++) {
-				for(col=0;col<3;col++) {
-					if(inputOK(row,col,myArray)) {
-						myArray[row][col] = 1;
-						if( whoWon(myArray) == 1) {
-							printArray(myArray);
-							return;
-						}
-						else myArray[row][col] = 0;
-					}
-				}
+			row = 0; col = 0;
+			while(myArray[row][col]!=0) {
+				col++;
+				if(col>2) { row++; col=0; }
+				if(row>2) return;
 			}
-			
-			boolean done=false;
-			// 남이 이기지 못 하게 하는 수
-			for(row=0;row<3 && !done;row++) {
-				for(col=0;col<3 && !done;col++) {
-					if(inputOK(row,col,myArray)) {
-						myArray[row][col] = -1;
-						if( whoWon(myArray) == -1) {
-							myArray[row][col] = 1;
-							done = true;
-						}
-						else myArray[row][col] = 0;
-					}
-				}
-			}
-			
-			// 처음 만나는 빈 곳에 두기
-			for(row=0;row<3 && !done;row++) {
-				for(col=0;col<3 & !done;col++) {
-					if(inputOK(row,col,myArray)) {
-						myArray[row][col] = 1;	
-						done = true;
-					}
-				}
-			}
+			myArray[row][col] = 1;
 			printArray(myArray);
 		}
 
