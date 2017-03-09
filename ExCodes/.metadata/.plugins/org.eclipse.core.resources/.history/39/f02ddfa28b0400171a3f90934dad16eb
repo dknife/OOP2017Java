@@ -65,7 +65,6 @@ public class Ex2017_02_TicTacToe {
 	public static void main(String[] args) {
 	
 		int[][] myArray ={{0,0,0}, {0,0,0}, {0,0,0}};
-		int row, col;
 		
 		Scanner scanner = new Scanner(System.in);
 		printArray(myArray);
@@ -77,8 +76,8 @@ public class Ex2017_02_TicTacToe {
 			
 			while(inputWating) {
 				System.out.print("Which element? (row, col): ");
-				row = scanner.nextInt();
-				col = scanner.nextInt();
+				int row = scanner.nextInt();
+				int col = scanner.nextInt();
 				if(inputOK(row,col, myArray)) {
 					myArray[row][col] = -1;
 					inputWating = false;

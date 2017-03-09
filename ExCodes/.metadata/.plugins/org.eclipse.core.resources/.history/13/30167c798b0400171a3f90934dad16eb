@@ -54,18 +54,9 @@ public class Ex2017_02_TicTacToe {
 		return 0;
 	}
 	
-	public static boolean inputOK(int r, int c, int[][] arr) {
-	
-		if(r < 0 || r>2) return false;
-		if(c < 0 || c>2) return false;
-		if(arr[r][c]!=0) return false;
-		return true;
-	}
-	
 	public static void main(String[] args) {
 	
 		int[][] myArray ={{0,0,0}, {0,0,0}, {0,0,0}};
-		int row, col;
 		
 		Scanner scanner = new Scanner(System.in);
 		printArray(myArray);
@@ -73,18 +64,10 @@ public class Ex2017_02_TicTacToe {
 		while(true) {
 			
 			// user
-			boolean inputWating = true;
-			
-			while(inputWating) {
-				System.out.print("Which element? (row, col): ");
-				row = scanner.nextInt();
-				col = scanner.nextInt();
-				if(inputOK(row,col, myArray)) {
-					myArray[row][col] = -1;
-					inputWating = false;
-				}
-			}
-			
+			System.out.print("Which element? (row, col): ");
+			int row = scanner.nextInt();
+			int col = scanner.nextInt();
+			myArray[row][col] = -1;
 			printArray(myArray);
 			
 			// computer
