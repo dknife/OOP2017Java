@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Ex2017_03_05_Exception {
+
+	public static void main(String s[]) {
+		Scanner scanner = new Scanner(System.in);
+		int dividend = scanner.nextInt();
+		int divisor = scanner.nextInt();
+		
+		// try-catch-finally
+		try {
+			System.out.println(dividend/divisor);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Sorry, / by zero not allowed");
+		}
+		finally {
+			System.out.println("Young-Min Kang");
+		}
+	}
+}
