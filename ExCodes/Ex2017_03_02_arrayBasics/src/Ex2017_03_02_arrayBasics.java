@@ -19,7 +19,7 @@ public class Ex2017_03_02_arrayBasics {
 			if(numbers[i]>max) max=numbers[i];
 			sum += numbers[i];
 		}
-		System.out.println(" : average = " + sum/((float)nNumbers));
+		System.out.println(" : average = " + sum/numbers.length);
 		System.out.println(" : max = " + max);
 		
 		
