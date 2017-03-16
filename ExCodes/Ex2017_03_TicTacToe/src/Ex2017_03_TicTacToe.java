@@ -201,7 +201,7 @@ public class Ex2017_03_TicTacToe {
 		}
 		
 		int[][] value = evaluatePlay(board);		
-		//printValue(value);
+		printValue(value);
 		
 		int bestRow = 0; int bestCol = 0;
 		int bestValue = value[bestRow][bestCol];
