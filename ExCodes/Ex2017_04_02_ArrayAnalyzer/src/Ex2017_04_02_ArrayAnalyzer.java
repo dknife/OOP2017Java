@@ -13,4 +13,6 @@ public class Ex2017_04_02_ArrayAnalyzer {
 		System.out.println("max_: "+AA.getMax());
 		System.out.println("min_: "+AA.getMin());
 	}
+	
+	
 }

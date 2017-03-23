@@ -1,0 +1,41 @@
+import java.util.*;
+
+public class Ex2017_05_01_Date {
+	
+	public static void main(String[] arg) {
+		Scanner scanner = new Scanner(System.in);
+		MyDate date;
+		date = new MyDate();
+		
+		while(true) {
+			System.out.print("Your command: 1) Set Date 2) Next Day 3) Prev Day 4) +30 days 5) -30 Days");
+			int command = scanner.nextInt();
+			
+			switch(command) {
+			case 1:
+				System.out.print("input year, month, and day");
+				date.setDate(scanner.nextInt(),
+						scanner.nextInt(),
+						scanner.nextInt());
+				break;
+			case 2: 
+				date.nextDay(1);
+				break;
+			case 3: 
+				date.prevDay();
+				break;
+			case 4: 
+				date.nextDay(30);
+				break;
+			case 5: 
+				//date.day-=30; break;
+			default: break;
+			}
+			
+			date.showDate();
+		}
+		
+				
+	}
+
+}

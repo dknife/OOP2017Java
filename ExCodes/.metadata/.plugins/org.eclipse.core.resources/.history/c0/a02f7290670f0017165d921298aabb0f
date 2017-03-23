@@ -1,0 +1,49 @@
+
+public class MyDate {
+	private int year;
+	private int month;
+	private int day;
+	
+	public MyDate() {
+		year = 1970;
+		month = day = 1;
+	}
+	
+	/////////////// methods
+	public void setDate(int y, int m, int d) {
+		year = y; month = m; day = d;
+	}
+	
+	public void showDate() {
+		System.out.println(year+"."+month+"."+day);
+	}
+	
+	private int maxDay(int m) {
+		int days=0;
+		switch(m) {
+		case 1:	case 3:	case 5:	case 7:
+		case 8:	case 10: case 12: 
+			days = 31; break;
+		case 2:
+			days = 28; break;
+		case 4:	case 6:	case 9:	case 11:
+			days=30; break;		
+		}
+		return days;
+	}
+	
+	public void nextDay() {
+		day++;
+		int MaxDay = maxDay(month);
+		if(day>MaxDay) { day=1; month++; }
+		if(month>12) { year++; month=1; }
+	}
+	
+	public void prevDay() {
+		if(--day==0) {
+			if(--month==0) { month = 12; year--; }
+			int maxDay = maxDay(month);
+			day = maxDay;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+public class MyDate {
+	private int year;
+	private int month;
+	private int day;
+	
+	public MyDate() {
+		year = 1970;
+		month = day = 1;
+	}
+	
+	/////////////// methods
+	public void setDate(int y, int m, int d) {
+		year = y; month = m; day = d;
+	}
+	
+	public void showDate() {
+		System.out.println(year+"."+month+"."+day);
+	}
+	
+}

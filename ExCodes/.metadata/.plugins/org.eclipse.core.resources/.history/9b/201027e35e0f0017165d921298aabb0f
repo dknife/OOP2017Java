@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class Ex2017_05_01_Date {
+	
+	public static void main(String[] arg) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Your command: 1) Set Date 2) Next Day 3) Prev Day 4) +30 days 5) -30 Days");
+				
+	}
+
+}
