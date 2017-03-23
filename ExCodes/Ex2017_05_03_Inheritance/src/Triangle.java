@@ -15,9 +15,5 @@ public class Triangle extends Shape {
 		return 0.5*w*h;
 	}
 	
-	public String toString() {
-		String s = "Triangle: area = " + area();
-		return s;
-	}
 
 }

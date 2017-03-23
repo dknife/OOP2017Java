@@ -12,7 +12,7 @@ public class Shape {
 	}
 	
 	public String toString() {
-		String s = "shape:unknown";
+		String s = "shape:"+type+"  area:"+area();
 		return s;
 	}
 }
