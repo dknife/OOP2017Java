@@ -3,8 +3,8 @@ public class Circle extends Shape {
 	double radius;
 	
 	public Circle(double r) {
+		super("Circle");
 		radius = r;
-		type = "Circle";
 		System.out.println("Circle Created with r="+radius);
 	}
 	

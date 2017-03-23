@@ -5,9 +5,9 @@ public class Rectangle extends Shape {
 	double h;
 	
 	public Rectangle(double w, double h) {
+		super("Rectangle");
 		this.w = w;
-		this.h = h;
-		type = "Rectangle";
+		this.h = h;		
 		System.out.println("Rectangle Created with (w,h)=("+w+","+h+")");
 	}
 	

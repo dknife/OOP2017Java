@@ -5,9 +5,9 @@ public class Triangle extends Shape {
 	double h;
 	
 	public Triangle(double w, double h) {
+		super("Triangle");
 		this.w = w;
 		this.h = h;
-		type = "Triangle";
 		System.out.println("Triangle Created with (w,h)=("+w+","+h+")");
 	}
 	
