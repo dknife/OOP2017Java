@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Ex2017_06_02_Generic {
+	
+	public static void main(String[] args) {
+		Vector<Double> myVector = new Vector<Double>();
+		
+		myVector.add(1.4);
+		myVector.add(2.4);
+		myVector.add(3.4);
+		myVector.add(4.4);
+		
+		myVector.remove(3.4);
+		
+		double dValue;
+		
+		for(int i=0;i<myVector.size();i++) {
+			dValue = myVector.get(i);
+			System.out.println(dValue);
+		}
+		
+		
+		
+		
+		
+	}
+}
