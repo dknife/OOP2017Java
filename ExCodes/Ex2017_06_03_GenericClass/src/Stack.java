@@ -1,24 +1,26 @@
 
-public class Stack {
-	int[] array;
+public class Stack <T> {
+	Object[] array;
 	int top;
-	
+	final int MAX = 1024;
+		
 	Stack() {
-		array = new int[10];
+		array = new Object[MAX];
 		top = 0;
 	}
 	
 	boolean isEmpty() { return top==0; }
-	boolean isFull() { return top==10; }
+	boolean isFull() { return top==MAX; }
 	
-	public void push(int v) {
+	public void push(T v) {
 		if(isFull()) return;
 		array[top] = v;
 		top++;
 	};
-	public int pop() {
+	public T pop() {
+		if(isEmpty()) return null;
 		top--;
-		return array[top];		
+		return (T) array[top];		
 	};
 
 }
