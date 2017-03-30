@@ -1,0 +1,32 @@
+
+import java.io.*;
+
+public class Ex2017_06_05_File {
+	
+	public static void main(String[] argv) {	
+		
+		try {
+			
+			FileInputStream fin = new FileInputStream("./input.txt");
+			FileOutputStream fout = new FileOutputStream("./output.txt");
+			
+			int c;
+			while ( (c = fin.read())!= -1 ) {
+				fout.write(c);
+			}
+			
+			fin.close();
+			fout.close();
+		
+		}
+		catch(FileNotFoundException e) {
+			System.out.println("File Not Found");
+		}
+		catch(IOException e) {
+			System.out.println("IO Error");
+		}
+		
+		
+	}
+
+}

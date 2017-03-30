@@ -1,0 +1,32 @@
+
+import java.io.*;
+
+public class Ex2017_06_05_File {
+	
+	public static void main(String[] argv) {
+		try {
+			FileInputStream fin = null;
+			FileOutputStream fout = new FileOutputStream("./test.out");
+			
+			String s = "Å×½ºÆ®";
+			System.out.println("string length =" + s.length());
+			for(int i=0;i<s.length();i++) {
+				fout.write((int) s.charAt(i));
+			}
+			 
+			
+			fout.close();
+			System.out.println("file processed");
+		
+		}
+		catch(FileNotFoundException e) {
+			System.out.println("File Not Found");
+		}
+		catch(IOException e) {
+			System.out.println("IO Error");
+		}
+		
+		
+	}
+
+}
