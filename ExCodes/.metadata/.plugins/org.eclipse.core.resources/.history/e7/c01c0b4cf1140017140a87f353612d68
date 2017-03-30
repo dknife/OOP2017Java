@@ -28,9 +28,10 @@ public class Ex2017_06_02_Generic {
 		
 		while(strVector.remove("kang"));
 		
-		Iterator<String> itStr = strVector.iterator();
-		while(itStr.hasNext()) 
-			System.out.println(itStr.next());
+		for(int i=0; i<strVector.size(); i++) {
+			System.out.println(strVector.get(i));
+		}
+		
 		
 		
 		
