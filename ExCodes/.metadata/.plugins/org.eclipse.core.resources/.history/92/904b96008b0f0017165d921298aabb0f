@@ -1,7 +1,0 @@
-
-public class Ex2017_05_03_Inheritance {
-	public static void main(String arg[]) {
-		Shape a = new Shape();
-		System.out.println("test");;
-	}
-}
