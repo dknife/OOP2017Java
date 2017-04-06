@@ -9,7 +9,9 @@ public class Ex2017_07_01_SwingStart extends JFrame {
 		setSize(300, 300);
 		setTitle("이것은 나의 윈도");
 		setLocation(100, 100);
+		setLayout(new FlowLayout());
 		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
 	}
 	
 	public static void main(String []argv) {

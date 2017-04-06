@@ -1,0 +1,35 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Ex2017_07_02_SwingLayouts extends JFrame {
+	
+	Ex2017_07_02_SwingLayouts() {
+		setSize(300, 300);
+		setTitle("이것은 나의 윈도");
+		setLocation(100, 100);
+		setLayout(new GridLayout(4,2, 2,10));
+		
+
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+	}
+	
+	public static void main(String []argv) {
+		Ex2017_07_02_SwingLayouts f = new Ex2017_07_02_SwingLayouts();
+		
+		f.add(new JLabel("이름"));
+		f.add(new JTextField(""));
+		f.add(new JLabel("번호"));
+		f.add(new JTextField(""));
+		f.add(new JLabel("주소"));
+		f.add(new JTextField(""));
+		f.add(new JLabel("나이"));
+		f.add(new JTextField(""));
+		
+		f.setVisible(true);
+	}
+
+}
