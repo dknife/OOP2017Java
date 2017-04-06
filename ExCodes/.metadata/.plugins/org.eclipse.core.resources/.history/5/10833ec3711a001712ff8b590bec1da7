@@ -6,12 +6,7 @@ import javax.swing.event.*;
 public class Ex2017_07_03_Action extends JFrame {
 	class myActionListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			JButton b = (JButton) e.getSource();
-			String txt = b.getText();
-			if(txt.equals("Action")) {
-				b.setText("¾×¼Ç");
-			}
-			else b.setText("Action");
+			System.exit(0);
 		}
 	}
 	
