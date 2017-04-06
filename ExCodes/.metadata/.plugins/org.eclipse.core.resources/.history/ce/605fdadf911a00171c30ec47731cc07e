@@ -1,0 +1,39 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+
+public class GuiTicTacToe extends JFrame {
+	int board[][] = {{0,0,0}, {0,0,0}, {0,0,0}};
+	JButton btn[][];
+	
+	class MyActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			JButton b = (JButton) e.getSource();
+			b.setBackground(Color.RED);
+		}
+	}
+	GuiTicTacToe() {
+		setTitle("Tic Tac Toe");
+		setSize(500,500);
+		setLayout(new GridLayout(3,3,0,0));
+		
+		btn = new JButton[3][3];
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				btn[i][j] = new JButton(i+","+j);
+				add(btn[i][j]);
+				btn[i][j].addActionListener(listener);
+			}
+		}
+		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+	}
+	public static void main(String[] s) {
+		GuiTicTacToe Frame = new GuiTicTacToe();
+	}
+}

@@ -14,15 +14,9 @@ public class Ex2017_07_04_Mouse extends JFrame {
 			JButton b = (JButton) e.getSource();
 			b.setBackground(Color.YELLOW);
 		}
-		public void mousePressed(MouseEvent e) {
-			
-		}
-		public void mouseReleased(MouseEvent e) {
-			
-		}
-		public void mouseClicked(MouseEvent e) {
-			
-		}
+		public void mousePressed(MouseEvent e) {}
+		public void mouseReleased(MouseEvent e) {}
+		public void mouseClicked(MouseEvent e) {}
 	}
 	
 	Ex2017_07_04_Mouse() {
