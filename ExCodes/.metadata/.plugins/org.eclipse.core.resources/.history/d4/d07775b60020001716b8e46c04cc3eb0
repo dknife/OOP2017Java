@@ -1,0 +1,32 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Ex2017_08_04_Radio extends JFrame {
+
+	JLabel imgLabel;
+	
+	Ex2017_08_04_Radio() {
+		setTitle("radio buttons");
+		setBounds(10,10, 500,500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		ButtonGroup group = new ButtonGroup();		
+		JRadioButton but1 = new JRadioButton("button 1");
+		JRadioButton but2 = new JRadioButton("button 2");
+		JRadioButton but3 = new JRadioButton("button 3");
+		group.add(but1);
+		group.add(but2);
+		group.add(but3);
+		add(but1);
+		add(but2);
+		add(but3);
+		
+		setVisible(true);
+	}
+	
+	public static void main(String[] a) {
+		new Ex2017_08_04_Radio();
+	}
+}
