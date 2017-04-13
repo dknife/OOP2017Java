@@ -1,0 +1,26 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Ex2017_08_01_ImageButton extends JFrame {
+
+	Ex2017_08_01_ImageButton() {
+		// 1. title, size, location
+		setTitle("Image Button");
+		setBounds(0,0, 500, 500);
+		// 2. exit operation
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		// your components here
+		JButton myButton = new JButton("이건 내 버튼");
+		add(myButton);
+		
+		
+		// 3. make this frame visible
+		setVisible(true);
+	}
+	public static void main(String[] s) {
+		new Ex2017_08_01_ImageButton();
+	}
+}

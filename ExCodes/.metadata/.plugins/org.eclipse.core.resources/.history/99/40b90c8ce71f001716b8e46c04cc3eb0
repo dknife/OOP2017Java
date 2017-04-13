@@ -1,0 +1,28 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Ex2017_08_02_CheckBox extends JFrame {
+	
+	Ex2017_08_02_CheckBox() {
+		// 1. title, size, location
+		setTitle("Image Button");
+		setBounds(0,0, 500, 500);
+		// 2. set layout manager and exit operation
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JCheckBox box1 = new JCheckBox("»ç°ú");
+		box1.setBounds(0,0, 100,50);
+		add(box1);
+		
+		// 3. make this frame visible
+		setVisible(true);
+	}
+	
+	public static void main(String[] s) {
+		new Ex2017_08_02_CheckBox();
+	}
+
+}
