@@ -1,0 +1,17 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ex2017_08_03_ItemEvent extends JFrame {
+	
+	Ex2017_08_03_ItemEvent() {
+		setTitle("item event handling");
+		setBounds(100,100, 300, 300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+	public static void main(String Arg[]) {
+		new Ex2017_08_03_ItemEvent();
+	}
+
+}

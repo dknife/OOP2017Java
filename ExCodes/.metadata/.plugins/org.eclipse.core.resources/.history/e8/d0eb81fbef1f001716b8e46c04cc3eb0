@@ -1,0 +1,38 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ex2017_08_03_ItemEvent extends JFrame {
+	
+	JLabel explanation;
+	JLabel sumLabel;
+	JCheckBox check[];
+	String titles[] = {"사과", "배", "체리", "갈치", "고등어"};
+	int price[] = { 100, 200, 5000, 10000, 5000 };
+	
+	Ex2017_08_03_ItemEvent() {
+		setTitle("item event handling");
+		setBounds(100,100, 300, 300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		// JLabel for explanation
+		String string = new String("가격정보: ");
+		for(int i=0; i<price.length; i++) {
+			string = string.concat(titles[i]+":"+price[i]+",");
+		}
+		explanation = new JLabel(string);
+		add(explanation);
+		
+		check = new JCheckBox[price.length];
+		for(int i=0; i<price.length; i++) {
+			check[i] = new JCheckBox("asdf");
+			add(check[i]);
+		}
+		
+		setVisible(true);
+	}
+	public static void main(String Arg[]) {
+		new Ex2017_08_03_ItemEvent();
+	}
+
+}
