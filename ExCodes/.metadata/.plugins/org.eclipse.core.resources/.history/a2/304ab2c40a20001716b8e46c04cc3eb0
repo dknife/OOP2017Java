@@ -1,0 +1,32 @@
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Ex2017_08_07_Calc extends JFrame {
+
+	JLabel Display;
+	
+	JButton NumBtn[] = new JButton[10];
+	String opStr[] = { "+", "-", "x", "/", "=" };
+	JButton Operator[] = new JButton[5];			
+	
+	Ex2017_08_07_Calc() {
+		setTitle("My Own Calculator");
+		setBounds(10,10, 500,700);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLayout(null);
+		
+		Display = new JLabel("0");
+		Display.setBounds(0,0,500,100);
+		Display.setHorizontalAlignment(SwingConstants.RIGHT);
+		add(Display);
+			
+		setVisible(true);
+	}
+	
+	public static void main(String[] a) {
+		new Ex2017_08_07_Calc();
+	}
+}
