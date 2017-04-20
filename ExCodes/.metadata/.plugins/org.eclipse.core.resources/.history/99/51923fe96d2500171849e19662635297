@@ -1,0 +1,28 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class MyFlickeringLabel extends JLabel implements Runnable {
+	
+	MyFlickeringLabel() {}
+	MyFlickeringLabel(String s) {
+		super(s);
+		Thread th = new Thread(this);
+		th.start();
+	}
+	
+	public void run() {
+		int n = 0;
+		while(true) {
+			n++;
+			this.setText(""+n);
+			try{
+				Thread.sleep(1000);
+			}
+			catch(InterruptedException e) { }
+		}
+	}
+	
+
+}

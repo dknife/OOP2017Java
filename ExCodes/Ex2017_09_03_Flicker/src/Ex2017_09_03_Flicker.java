@@ -4,8 +4,14 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
+
+
 public class Ex2017_09_03_Flicker extends JFrame {
 
+
+	final int sec = 0;
+	final int centiSec = 1;
+	
 	Ex2017_09_03_Flicker() {
 		setTitle("flickering with threads");
 		setBounds(0,0,500,200);
@@ -14,8 +20,13 @@ public class Ex2017_09_03_Flicker extends JFrame {
 		JLabel l1;
 		MyFlickeringLabel l2, l3;
 		l1 = new JLabel("label 1");
-		l2 = new MyFlickeringLabel("label 2");
-		l3 = new MyFlickeringLabel("label 3");
+		l2 = new MyFlickeringLabel("label 2", sec);
+		l3 = new MyFlickeringLabel("label 3", centiSec);
+		
+		Thread th1 = new Thread(l2);
+		th1.start();
+		Thread th2 = new Thread(l3);
+		th2.start();
 		
 		this.add(l1); 
 		this.add(l2);
