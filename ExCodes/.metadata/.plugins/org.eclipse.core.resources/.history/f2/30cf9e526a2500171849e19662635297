@@ -11,11 +11,10 @@ public class Ex2017_09_03_Flicker extends JFrame {
 		setBounds(0,0,500,200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new FlowLayout());
-		JLabel l1;
-		MyFlickeringLabel l2, l3;
+		JLabel l1, l2, l3;
 		l1 = new JLabel("label 1");
-		l2 = new MyFlickeringLabel("label 2");
-		l3 = new MyFlickeringLabel("label 3");
+		l2 = new JLabel("label 2");
+		l3 = new JLabel("label 3");
 		
 		this.add(l1); 
 		this.add(l2);
