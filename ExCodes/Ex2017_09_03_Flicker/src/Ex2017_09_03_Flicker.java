@@ -19,9 +19,9 @@ public class Ex2017_09_03_Flicker extends JFrame {
 		setLayout(new FlowLayout());
 		JLabel l1;
 		MyFlickeringLabel l2, l3;
-		l1 = new JLabel("label 1");
-		l2 = new MyFlickeringLabel("label 2", sec);
-		l3 = new MyFlickeringLabel("label 3", centiSec);
+		l1 = new JLabel("Elapsed Time (sec)");
+		l2 = new MyFlickeringLabel(sec);
+		l3 = new MyFlickeringLabel(centiSec);
 		
 		Thread th1 = new Thread(l2);
 		th1.start();

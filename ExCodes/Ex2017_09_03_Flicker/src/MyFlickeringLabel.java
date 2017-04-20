@@ -11,8 +11,7 @@ public class MyFlickeringLabel extends JLabel implements Runnable {
 	int type = 0;
 	
 	MyFlickeringLabel() {}
-	MyFlickeringLabel(String s, int _type) {
-		super(s);
+	MyFlickeringLabel(int _type) {
 		type = _type;
 	}
 	
@@ -23,6 +22,8 @@ public class MyFlickeringLabel extends JLabel implements Runnable {
 			if(type == centiSec && n>100) n-=100;
 			else if(type == sec && n > 60) n-=60;
 			this.setText(""+n);
+			
+			
 			try{
 				if(type == sec) Thread.sleep(1000);
 				else Thread.sleep(10);

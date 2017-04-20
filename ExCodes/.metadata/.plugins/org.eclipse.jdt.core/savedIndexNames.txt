@@ -4,9 +4,7 @@ INDEX VERSION 1.129+C:\ymkang2017OOPJava\OOP2017Java\ExCodes\.metadata\.plugins\
 2380175872.index
 1482736804.index
 33759729.index
-1884210816.index
 4222042826.index
-1379802327.index
 2416841643.index
 3547353160.index
 3852351235.index
@@ -46,6 +44,5 @@ INDEX VERSION 1.129+C:\ymkang2017OOPJava\OOP2017Java\ExCodes\.metadata\.plugins\
 2047305378.index
 3749604728.index
 2696760411.index
-20202626.index
 2132636588.index
 1498501910.index

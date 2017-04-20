@@ -5,7 +5,7 @@ public class TimerRunnable implements Runnable {
 	public void run() {
 		while(true) {
 			System.out.println(n++);
-			try { Thread.sleep(10); }
+			try { Thread.sleep(1000); }
 			catch(InterruptedException e) {}
 		}
 	}
