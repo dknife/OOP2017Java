@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Ex2017_09_01_SimpleThread extends Thread {
+	
+	
+	public static void main(String[] arg) {
+		
+		Scanner myScanner = new Scanner(System.in);
+	
+		int n = 0;
+		
+		while(true) {
+			String str = myScanner.next();
+			System.out.println("your input : " + str);
+			System.out.println(n);
+			n++;
+			try { 
+				sleep(1000);
+			}
+			catch (InterruptedException e) {}
+		}
+		
+	}
+
+}
