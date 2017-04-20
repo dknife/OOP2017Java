@@ -1,0 +1,19 @@
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Ex2017_09_03_Flicker extends JFrame {
+
+	Ex2017_09_03_Flicker() {
+		setTitle("flickering with threads");
+		setBounds(0,0,500,200);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);		
+	}
+	
+	public static void main(String[] argv) {
+		new Ex2017_09_03_Flicker();
+	}
+}
